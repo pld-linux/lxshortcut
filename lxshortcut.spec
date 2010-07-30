@@ -7,7 +7,9 @@ Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
 # Source0-md5:	68419579deaecf696111bef97d3985bc
 URL:		http://www.lxde.org/
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.12.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,6 +21,7 @@ created with freedesktop.org Desktop Entry spec.
 
 %build
 %configure
+touch po/stamp-it
 %{__make}
 
 %install
