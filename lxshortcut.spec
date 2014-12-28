@@ -16,7 +16,7 @@ Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
 # Source0-md5:	72f0dfafa8098be853beae6e33b5e13b
 URL:		http://wiki.lxde.org/en/LXShortCut
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 %{?with_gtk2:BuildRequires:	gtk+2-devel >= 2:2.12.0}
 %{?with_gtk3:BuildRequires:	gtk+3-devel}
 BuildRequires:	pkgconfig
