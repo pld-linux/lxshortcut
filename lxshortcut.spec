@@ -10,7 +10,7 @@
 Summary:	Program to edit application shortcuts
 Name:		lxshortcut
 Version:	0.1.2
-Release:	3
+Release:	4
 License:	GPL v3
 Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
